@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Fragment} from "react"
+import Cart from "./Containers/Cart"
+import Product from "./Containers/Product"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+    render () {
+        return (
+            <Fragment>
+                <h1>欢迎你：赛哥！</h1>
+                <Product></Product>
+                <hr/>
+                <Cart></Cart>
+            </Fragment>
+        )
+    }
 }
-
-export default App;
+export default App
